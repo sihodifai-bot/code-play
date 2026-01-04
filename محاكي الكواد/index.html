@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE-X | محاكي الأكواد</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <!-- خلفية تفاعلية -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <div class="main-container">
+        <header class="site-header">
+            <!-- شعار متحرك -->
+            <div class="logo">
+                <div class="logo-square"></div>
+                <span class="logo-text glitch" data-text="CODE-X">Code-Play</span>
+            </div>
+            <div class="controls">
+                <button id="run-btn" class="cyber-button">
+                    <span class="btn-text">شاهد</span>
+                    <span class="btn-glitch"></span>
+                </button>
+                <button id="download-btn" class="cyber-button secondary">
+                    <span class="btn-text">تحميل</span>
+                    <span class="btn-glitch"></span>
+                </button>
+            </div>
+        </header>
+
+        <main class="editor-grid">
+            <!-- قسم محررات الأكواد -->
+            <div class="code-editors">
+                <div class="editor-wrapper">
+                    <label for="html-code">HTML</label>
+                    <textarea id="html-code" placeholder="<!-- اكتب كود HTML هنا -->"></textarea>
+                </div>
+                <div class="editor-wrapper">
+                    <label for="css-code">CSS</label>
+                    <textarea id="css-code" placeholder="/* اكتب كود CSS هنا */"></textarea>
+                </div>
+                <div class="editor-wrapper">
+                    <label for="js-code">JavaScript</label>
+                    <textarea id="js-code" placeholder="// اكتب كود JavaScript هنا"></textarea>
+                </div>
+            </div>
+
+            <!-- قسم عرض النتيجة -->
+            <div class="output-container">
+                <label>النتيجة</label>
+                <iframe id="output-frame"></iframe>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
